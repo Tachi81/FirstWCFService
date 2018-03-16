@@ -15,6 +15,9 @@ namespace FirstWCFapp
         string GetData(int value);
 
         [OperationContract]
+        string GetWelcomeMessage(string name);
+
+        [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: Add your service operations here
